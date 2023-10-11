@@ -8,13 +8,19 @@
       rel="stylesheet"
       type="text/css"
     />
+    <script type=”text/javascript”>
+        function autoplay(){
+            var r =confirm(“Would You Like To AutoPlay Music?”);
+            if (r == true) {
+                document.getElementById(“audio”).play();
+            }
+          }
+        </script>
+        <script>autoplay();</script>
   </head>
   <body>
-    <audio id="audio" hidden controls autoplay>
-            <source src="https://drive.mohanishx1.workers.dev/0:/epic.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-         </audio>
-      <master class="center">
+    <audio autoplay="true" src="/epic.mp3" type="audio/mp3" loop>
+    <master class="center">
     <main><div class="icon">
         <title>MohanishX</title>
         <h1 style="color: whitesmoke; text-align: center;">Dept Of CyberSecurity</h1>
